@@ -37,15 +37,13 @@ const LaunchContainer = () => {
 
     return(
         <>
-        <h1>SpaceX Launch Details</h1>
-        <LaunchSelector 
-            onSelectedLaunchIncrement={() => incrementSelectedLaunch()}
-            onSelectedLaunchDecrement={() => decrementSelectedLaunch()}
-        />
-        <LaunchDetails 
-            launch={launch}
-            loaded={loaded}
-        />
+            <h1>SpaceX Launch Details</h1>
+            <LaunchSelector 
+                onSelectedLaunchIncrement={() => incrementSelectedLaunch()}
+                onSelectedLaunchDecrement={() => decrementSelectedLaunch()}/>
+            <LaunchDetails 
+                launch={launch}
+                loaded={loaded}/>
         </>
     )
 }
