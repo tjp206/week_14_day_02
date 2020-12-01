@@ -17,7 +17,7 @@ function App() {
       setFizzNum("Buzz");
     }
     else {
-      setFizzNum(number);
+      setFizzNum("");
     };
   }, [number])
 
